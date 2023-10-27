@@ -1,66 +1,82 @@
 body{
-    margin: 10%;
+    margin: 10%; /*Afegim una mica de marge per a destacar més el Formulari*/
+    background-color: rgba(0,0,0, 0.3); /*rba per poder indicar el canal alfa del color*/
 }
 *{
-    font-family: sans-serif;
+    font-family: sans-serif; /*Canviem la font del document sencer*/
 }
 form{
-    padding:50px;
-    background-color: #b4d1ce;
-    border-radius: 10px;
+    padding: 1px 50px 50px 50px; /*Padding per a separar el text del limit del contenidor*/
+    background-color: #b4d1ce; /*Color amb Hexadecimal*/
+    border-radius: 10px; /*Arrodonir les vores*/
 }
 h1{
     text-align:center;
     font-weight: 900;
-    width:100%;
+    width:100%; /*Fem que ocupi tot l'espai disponible horitzontalment*/
     font-size:40px;
 }
 label{
-    line-height:25px;
+    line-height:25px; /*ampliem l'alçada de lina dels labels per aseparar-los una mica dels inputs*/
 }
-input[type=text], input[type=email], input[type=tel]{
-    width:100%;
+#edat, #tlf, #id-doc{ /*selector d'id*/
+    width:100px;
+    padding:10px;
+    border-radius: 5px;
+    border: 3px solid transparent; /*vora transparent per a evitar canvis de mida un cop el fem visible amb :focus*/
+    text-align: center;
+    font-weight: bold; /*negreta*/
+}
+.class-nom, .class-email{ /*selectors de classe*/
+    width:300px;
     padding:10px;
     border-radius: 5px;
     border: 3px solid transparent;
+    font-weight: bold;
 }
-        input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus{
-            border-color: black;
-        }
+    .class-nom:focus, .class-email:focus, #tlf:focus, #edat:focus, #id-doc:focus {
+    /*selectors de :focus per a canviar estils un cop l'usuari fa click al input o hi arriba tabulant*/
+        border-color: black;
+        background-color: rgba(33, 248, 255, 0.4);
+    }
+
 select{
-    background:transparent;
-    border: none;
-    box-sizing: border-box;
-    appearance: none;
+    background: transparent;
+    border: 3px solid transparent;
+    appearance: none; /*treiem la fletxa del desplegable <select>*/
     padding:4px;
     margin-bottom: 5px;
     font-weight: bold;
 }
-        select:focus, select:hover{
-            background-color: rgba(68, 212, 200, 0.4);
-            border-radius: 5px;
-            border:none;
-            cursor:pointer;
-        }
+    select:focus, select:hover{
+        background-color: rgba(68, 212, 200, 0.4);
+        border-radius: 5px;
+        border-color: black;
+        cursor:pointer; /*Fem que el cursor sigui de l'estil Pointer mentre siguem a sobre o seleccionem una opci-o del desplegable*/
+    }
 
 
-input[type=checkbox], input[type=radio]{
+input[type=checkbox], input[type=radio]{ /*selectors dels inputs segons el seu type*/
     cursor: pointer;
     font-size: 14px;
-    accent-color: #44d4c8;
+    accent-color: #44d4c8; /*canvia el color dels quadrats i rodones clickables*/
 }
-
+p{
+    font-weight: bold;
+}
 textarea{
-    width:100%;
-    min-height:60px;
+    min-width:100%; /*amplada minima per a que només es pugui agrandar en altura*/
+    max-width: 100%; /*amplada maxima per que no sobresurti del contenidor*/
+    min-height:60px; /*definim una altura minima*/
     border-radius: 5px;
     border: 3px solid transparent;
     padding: 5px;
     font-size: 14px;
 }
-textarea:focus{
-    border-color: black;
-}
+    textarea:focus{
+        background-color: rgba(68, 212, 200, 0.4);
+        border-color: black;
+    }
 
 input[type=submit]{
     width:100%;
@@ -70,10 +86,41 @@ input[type=submit]{
     border: 3px solid transparent;
     font-size: 20px;
 }
-input[type=submit]:hover{
-    border: 3px solid black;
+    input[type=submit]:hover{
+        border: 3px solid black;
+    }
+    input[type=submit]:active{
+        background:rgba(68, 212, 200, 0.4);
+        color: white;
+    }
+
+/*Aquesta part només afecta al html de formulari_enviat*/
+article{
+    background: #b4d1ce;
+    padding:50px;
+    border-radius: 20px;
+    text-align: center;
 }
-input[type=submit]:active{
-    background:rgba(68, 212, 200, 0.4);
-    color: white;
+article > footer{
+    font-size: 10px;
+    padding-top: 30px;
 }
+article > h1{
+    margin-top: -10px;
+}
+article > a > button{
+    padding: 10px;
+    width:100%;
+    padding:20px;
+    border-radius: 10px;
+    background-color: white;
+    border: 3px solid transparent;
+    font-size: 20px;
+}
+      button:hover{
+          border: 3px solid black;
+      }
+      button:active{
+          background:rgba(68, 212, 200, 0.4);
+          color: white;
+    }

@@ -2,32 +2,35 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Gimnas Can Drago</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Gimnàs Can Dragó</title>
+    <link rel="stylesheet" href="style.css"> <!--assignem CSS extern-->
 </head>
 <body>
-<form action="">
-    <h1>Gimnàs Can Drago</h1>
+<form action="formulari_enviat.html"> <!--Enllaç del botó amb l'altre document HTML-->
+    <h1>Gimnàs Can Dragó</h1>
     <h2>Vols fer una prova gratuïta?</h2>
-    <label for="nombre">El teu nom: </label>
-    <input id="nombre" name="nombre" type="text" required placeholder="Antoni Martí" >
+    <label for="nombre">El teu nom: </label><br> <!--assignem un <label> a l'input corresponent-->
+    <input class="class-nom" id="nombre" name="nombre" type="text" required placeholder="Antoni Martí" >
     <br><br>
-    <label for="email">El teu email: </label>
-    <input id="email" name="email" type="email" required placeholder="muscul@proteina.cat">
+    <label for="edat">La teva edat: </label><br>
+    <input class="class-edat" id="edat" name="edat" type="number" required placeholder="34">
     <br><br>
-    <label for="tlf">El teu mòbil: </label>
+    <label for="email">El teu email: </label><br>
+    <input class="class-email" id="email" name="email" type="email" required placeholder="muscul@proteina.cat">
+    <br><br>
+    <label for="tlf">El teu mòbil: </label><br>
     <input id="tlf" name="tlf" type="tel" required placeholder="608657248" maxlength="9">
     <br><br>
     <label for="tipo-doc">Tipus de document: </label>
     <select id="tipo-doc" name="tipo-doc">
         <option value="DNI">DNI</option>
         <option value="NIE">NIE</option>
-    </select>
+    </select></br>
     <label for="id-doc"></label>
-    <input id="id-doc" name="id-doc" type="text" placeholder="12345678A" required>
+    <input id="id-doc" name="id-doc" type="text" placeholder="12345678A" required maxlength="9">
     <br><br>
     <h3>Que t'interessaria probar al nostre gimnàs?</h3>
-    <input type="checkbox" id="maquines" value="1" checked><label for="maquines">Màquines</label>
+    <input type="checkbox" id="maquines" value="1" checked><label for="maquines">Màquines</label> <!--fem servir el checked per que estigui sel·leccionada per defecte-->
     <br><br>
     <input type="checkbox" id="classes" value="2"><label for="classes">Classes guiades</label>
     <br><br>
@@ -37,12 +40,12 @@
     <textarea id="altres" placeholder="Bici, esports, spa..."></textarea>
     <br><br>
     <p>Per a continuar has d'acceptar la politica de privacitat</p>
-    <input type="radio" id="1" name="politica" checked> <label>Accepto l'us de les meves dades i la politica de privacitat</label><br>
-    <input type="radio" id="2" name="politica"> <label>Accepto la politica de privacitat.</label><br>
-    <input type="radio" id="3" name="politica"> <label>No accepto >:( </label>
+    <input type="radio" id="priv1" name="politica" checked> <label for="priv1">Accepto l'us de les meves dades i la politica de privacitat</label><br>
+    <input type="radio" id="priv2" name="politica"> <label for="priv2">Accepto la politica de privacitat.</label><br>
+    <input type="radio" id="priv3" name="politica"> <label for="priv3">No accepto >:( </label>
     <br><br>
     <br><br>
-    <input type="submit" value="submit">
+    <input type="submit" value="submit"> <!--input de tipus submit per a enviar el formulari-->
 </form>
 
 
