@@ -2,36 +2,44 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Exercici Formularis</title>
+    <title>Gimnas Can Drago</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <form action="">
-    <h1>PLACEHOLDER TITLE</h1>
-    <label for="nombre">Tu nombre: </label>
-    <input id="nombre" name="nombre" type="text" >
+    <h1>Gimnàs Can Drago</h1>
+    <h2>Vols fer una prova gratuïta?</h2>
+    <label for="nombre">El teu nom: </label>
+    <input id="nombre" name="nombre" type="text" required placeholder="Antoni Martí" >
     <br><br>
-    <label for="email">Tu email: </label>
-    <input id="email" name="email" type="email"  placeholder="">
+    <label for="email">El teu email: </label>
+    <input id="email" name="email" type="email" required placeholder="muscul@proteina.cat">
     <br><br>
-    <label for="tlf">Tu tlf: </label>
+    <label for="tlf">El teu mòbil: </label>
     <input id="tlf" name="tlf" type="tel" required placeholder="608657248" maxlength="9">
     <br><br>
-    <label for="tipo-doc">Tipo de documento: </label>
+    <label for="tipo-doc">Tipus de document: </label>
     <select id="tipo-doc" name="tipo-doc">
         <option value="DNI">DNI</option>
         <option value="NIE">NIE</option>
     </select>
+    <label for="id-doc"></label>
+    <input id="id-doc" name="id-doc" type="text" placeholder="12345678A" required>
     <br><br>
-    <label for="id-doc">Numero: </label>
-    <input id="id-doc" name="id-doc" type="text" >
+    <h3>Que t'interessaria probar al nostre gimnàs?</h3>
+    <input type="checkbox" id="maquines" value="1" checked><label for="maquines">Màquines</label>
     <br><br>
-    <input type="checkbox" id="opt1" value="1" checked><label for="opt1">Opcion 1</label>
+    <input type="checkbox" id="classes" value="2"><label for="classes">Classes guiades</label>
     <br><br>
-    <input type="checkbox" id="opt2" value="2"><label for="opt2">Opcion 2</label>
+    <input type="checkbox" id="piscina" value="3"><label for="piscina">Piscina</label>
     <br><br>
-    <input type="checkbox" id="opt3" value="3"><label for="opt3">Opcion 3</label>
+    <label for="altres">Altres:</label>
+    <textarea id="altres" placeholder="Bici, esports, spa..."></textarea>
     <br><br>
-    <input type="radio" id=""> <label></label>
+    <p>Per a continuar has d'acceptar la politica de privacitat</p>
+    <input type="radio" id="1" name="politica" checked> <label>Accepto l'us de les meves dades i la politica de privacitat</label><br>
+    <input type="radio" id="2" name="politica"> <label>Accepto la politica de privacitat.</label><br>
+    <input type="radio" id="3" name="politica"> <label>No accepto >:( </label>
     <br><br>
     <br><br>
     <input type="submit" value="submit">
