@@ -1,6 +1,8 @@
 body{
-    margin: 10%; /*Afegim una mica de marge per a destacar més el Formulari*/
-    background-color: rgba(0,0,0, 0.3); /*rba per poder indicar el canal alfa del color*/
+    margin: 5% auto; /*Afegim una mica de marge per a destacar més el Formulari*/
+    display: flex;
+    justify-content: center; /* D'aquesta forma el margin auto centra el formulari en pantalla*/
+    background-color: rgba(0,0,0, 0.8); /*rba per poder indicar el canal alfa del color*/
 }
 *{
     font-family: sans-serif; /*Canviem la font del document sencer*/
@@ -9,6 +11,7 @@ form{
     padding: 1px 50px 50px 50px; /*Padding per a separar el text del limit del contenidor*/
     background-color: #b4d1ce; /*Color amb Hexadecimal*/
     border-radius: 10px; /*Arrodonir les vores*/
+    min-width: 600px;
 }
 h1{
     text-align:center;
@@ -100,6 +103,7 @@ article{
     padding:50px;
     border-radius: 20px;
     text-align: center;
+    min-width:600px;
 }
 article > footer{
     font-size: 10px;
