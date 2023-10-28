@@ -19,7 +19,7 @@ h1{
 label{
     line-height:25px; /*ampliem l'alçada de lina dels labels per aseparar-los una mica dels inputs*/
 }
-#edat, #tlf, #id-doc{ /*selector d'id*/
+#edat, #telefon, #id-doc{ /*selector d'id*/
     width:100px;
     padding:10px;
     border-radius: 5px;
@@ -34,7 +34,7 @@ label{
     border: 3px solid transparent;
     font-weight: bold;
 }
-    .class-nom:focus, .class-email:focus, #tlf:focus, #edat:focus, #id-doc:focus {
+    .class-nom:focus, .class-email:focus, #telefon:focus, #edat:focus, #id-doc:focus {
     /*selectors de :focus per a canviar estils un cop l'usuari fa click al input o hi arriba tabulant*/
         border-color: black;
         background-color: rgba(33, 248, 255, 0.4);
@@ -123,4 +123,4 @@ article > a > button{
       button:active{
           background:rgba(68, 212, 200, 0.4);
           color: white;
-    }
+      }

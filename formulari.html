@@ -2,15 +2,15 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Gimnàs Can Dragó</title>
+    <title>Formulari    Gimnàs Can Dragó</title>
     <link rel="stylesheet" href="style.css"> <!--assignem CSS extern-->
 </head>
 <body>
 <form action="formulari_enviat.html"> <!--Enllaç del botó amb l'altre document HTML-->
     <h1>Gimnàs Can Dragó</h1>
     <h2>Vols fer una prova gratuïta?</h2>
-    <label for="nombre">El teu nom: </label><br> <!--assignem un <label> a l'input corresponent-->
-    <input class="class-nom" id="nombre" name="nombre" type="text" required placeholder="Antoni Martí" >
+    <label for="nom">El teu nom: </label><br> <!--assignem un <label> a l'input corresponent-->
+    <input class="class-nom" id="nom" name="nom" type="text" required placeholder="Antoni Martí" >
     <br><br>
     <label for="edat">La teva edat: </label><br>
     <input class="class-edat" id="edat" name="edat" type="number" required placeholder="34">
@@ -18,11 +18,11 @@
     <label for="email">El teu email: </label><br>
     <input class="class-email" id="email" name="email" type="email" required placeholder="muscul@proteina.cat">
     <br><br>
-    <label for="tlf">El teu mòbil: </label><br>
-    <input id="tlf" name="tlf" type="tel" required placeholder="608657248" maxlength="9">
+    <label for="telefon">El teu mòbil: </label><br>
+    <input id="telefon" name="telefon" type="tel" required placeholder="608657248" maxlength="9">
     <br><br>
-    <label for="tipo-doc">Tipus de document: </label>
-    <select id="tipo-doc" name="tipo-doc">
+    <label for="tipus-doc">Tipus de document: </label>
+    <select id="tipus-doc" name="tipus-doc">
         <option value="DNI">DNI</option>
         <option value="NIE">NIE</option>
     </select></br>
@@ -32,7 +32,7 @@
     <h3>Que t'interessaria probar al nostre gimnàs?</h3>
     <input type="checkbox" id="maquines" value="1" checked><label for="maquines">Màquines</label> <!--fem servir el checked per que estigui sel·leccionada per defecte-->
     <br><br>
-    <input type="checkbox" id="classes" value="2"><label for="classes">Classes guiades</label>
+    <input type="checkbox" id="classe-guiada" value="2"><label for="classe-guiada">Classes guiades</label>
     <br><br>
     <input type="checkbox" id="piscina" value="3"><label for="piscina">Piscina</label>
     <br><br>
