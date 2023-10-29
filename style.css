@@ -68,12 +68,13 @@ p{
     font-weight: bold;
 }
 textarea{
-    min-width:100%; /*amplada minima per a que només es pugui agrandar en altura*/
-    max-width: 100%; /*amplada maxima per que no sobresurti del contenidor*/
-    min-height:60px; /*definim una altura minima*/
+    min-width: 600px; /*min i max width iguals per evitar que canvii l'amplada quan l'usuari arrosegui la vora detra del textarea.*/
+    max-width: 600px; 
+    max-height: 150px; /*Amb el min i max-height bloquejem les altures que volem*/
+    min-height:60px; 
     border-radius: 5px;
     border: 3px solid transparent;
-    padding: 5px;
+    padding: 15px;
     font-size: 14px;
 }
     textarea:focus{
@@ -100,17 +101,14 @@ input[type=submit]{
 /*Aquesta part només afecta al html de formulari_enviat*/
 article{
     background: #b4d1ce;
-    padding:50px;
-    border-radius: 20px;
+    padding: 1px 50px 50px 50px;
+    border-radius: 10px;
     text-align: center;
-    min-width:600px;
+    min-width:636px;
 }
 article > footer{
     font-size: 10px;
     padding-top: 30px;
-}
-article > h1{
-    margin-top: -10px;
 }
 article > a > button{
     padding: 10px;
